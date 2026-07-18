@@ -50,8 +50,8 @@ const samplePosts = [
     slug: 'thong-bao-lich-chi-tra-tro-cap-xa-hoi-thang-07-2026',
     category_id: 'an-sinh',
     type: 'announcement',
-    summary: 'Phòng Văn hóa Xã hội Xã Long Mỹ trân trọng thông báo lịch chi trả tiền trợ cấp bảo trợ xã hội và hỗ trợ người khuyết tật, người cao tuổi tháng 07/2026.',
-    content: `<p><strong>Phòng Văn hóa Xã hội Xã Long Mỹ xin thông báo đến toàn thể nhân dân và các đối tượng thụ hưởng chính sách bảo trợ xã hội về lịch chi trả như sau:</strong></p>
+    summary: 'Văn phòng Xã hội Xã Long Mỹ trân trọng thông báo lịch chi trả tiền trợ cấp bảo trợ xã hội và hỗ trợ người khuyết tật, người cao tuổi tháng 07/2026.',
+    content: `<p><strong>Văn phòng Xã hội Xã Long Mỹ xin thông báo đến toàn thể nhân dân và các đối tượng thụ hưởng chính sách bảo trợ xã hội về lịch chi trả như sau:</strong></p>
     <ul>
       <li><strong>Thời gian chi trả:</strong> Ngày 20/07/2026 và 21/07/2026 (Buổi sáng: 08h00 - 11h00 | Buổi chiều: 14h00 - 16h30).</li>
       <li><strong>Địa điểm:</strong> Hội trường Bộ phận Một cửa - UBND Xã Long Mỹ.</li>
@@ -103,7 +103,7 @@ const samplePosts = [
     category_id: 'lao-dong',
     type: 'announcement',
     summary: 'Chương trình hỗ trợ đào tạo nghề ngắn hạn cho lao động nông thôn (May công nghiệp, Kỹ thuật điện dân dụng, Trồng cây ăn trái chất lượng cao) hoàn toàn miễn học phí.',
-    content: `<p>Phòng Văn hóa Xã hội Xã Long Mỹ thông báo tuyển sinh các lớp học nghề ngắn hạn dành cho người lao động có hộ khẩu thường trú tại địa phương.</p>`,
+    content: `<p>Văn phòng Xã hội Xã Long Mỹ thông báo tuyển sinh các lớp học nghề ngắn hạn dành cho người lao động có hộ khẩu thường trú tại địa phương.</p>`,
     image_url: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80',
     is_featured: false,
     views: 310,
@@ -188,8 +188,8 @@ let dbData = {
       id: 1,
       username: 'admin',
       password: bcrypt.hashSync('admin123', 10),
-      fullname: 'Quản trị viên Phòng Văn hóa Xã hội',
-      email: 'admin@longmy.gov.vn',
+      fullname: 'Quản trị viên Phòng Văn hóa Xã hội Xã Long Mỹ',
+      email: 'admin@xalongmy.gov.vn',
       role: 'admin',
       created_at: '2026-07-01 08:00:00'
     }
@@ -204,7 +204,7 @@ let dbData = {
     sub_title: 'ỦY BAN NHÂN DÂN XÃ LONG MỸ - BỘ PHẬN MỘT CỬA & PHÒNG VĂN HOÁ XÃ HỘI',
     address: 'Trụ sở UBND Xã Long Mỹ, Ấp Mỹ Phú, Xã Long Mỹ, Huyện Cái Bè, Tỉnh Tiền Giang',
     phone: '0273 3855 123 - Hotline: 0918 456 789',
-    email: 'phongvanhoaxahoi@longmy.tiengiang.gov.vn',
+    email: 'phongvanhoaxahoi@xalongmy.tiengiang.gov.vn',
     working_hours: 'Thứ 2 - Thứ 6: Sáng 07h30 - 11h30 | Chiều 13h30 - 17h00',
     banner_announcement: 'Chào mừng Quý công dân đến với Cổng Dịch vụ công & Thông tin Phòng Văn hóa Xã hội Xã Long Mỹ.'
   }
@@ -294,6 +294,8 @@ module.exports = {
       summary: postData.summary || '',
       content: postData.content || '',
       image_url: postData.image_url || 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80',
+      pdf_url: postData.pdf_url || '',
+      pdf_name: postData.pdf_name || '',
       is_featured: postData.is_featured === true || postData.is_featured === 'true' || postData.is_featured === 'on',
       views: 0,
       created_at: now,

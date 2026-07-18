@@ -1,7 +1,7 @@
 {
-  "name": "pvhxh-xalongmy",
+  "name": "pvhxh-xaphongmy",
   "version": "1.0.0",
-  "description": "Trang thông tin điện tử & Dịch vụ công - Phòng Văn hóa Xã hội Xã Long Mỹ",
+  "description": "Trang thông tin điện tử & Dịch vụ công - Phòng Văn hóa Xã hội Xã Phong Mỹ",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -14,7 +14,7 @@
     "van-phong-xa-hoi",
     "supabase"
   ],
-  "author": "Phòng Văn hóa Xã hội Xã Long Mỹ",
+  "author": "Phòng Văn hóa Xã hội Xã Phong Mỹ",
   "license": "ISC",
   "dependencies": {
     "@supabase/supabase-js": "^2.110.7",

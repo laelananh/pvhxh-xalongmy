@@ -47,7 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Session configuration
 app.use(session({
-  secret: 'pvhxh_xalongmy_secret_key_2026',
+  secret: 'pvhxh_xaphongmy_secret_key_2026',
   resave: false,
   saveUninitialized: false,
   cookie: { maxAge: 24 * 60 * 60 * 1000 } // 1 day
@@ -452,7 +452,7 @@ app.use((req, res) => {
 // Start server
 app.listen(PORT, () => {
   console.log(`=======================================================`);
-  console.log(` CỔNG THÔNG TIN ĐIỆN TỬ PHÒNG VĂN HOÁ XÃ HỘI XÃ LONG MỸ`);
+  console.log(` CỔNG THÔNG TIN ĐIỆN TỬ PHÒNG VĂN HOÁ XÃ HỘI XÃ PHONG MỸ`);
   console.log(` Server running on http://localhost:${PORT}`);
   console.log(` Admin Portal: http://localhost:${PORT}/admin/login`);
   console.log(` Admin Credentials: admin / admin123`);

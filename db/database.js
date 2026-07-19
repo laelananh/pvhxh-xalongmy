@@ -183,22 +183,10 @@ const sampleContacts = [
 
 // Local Data Object
 let dbData = {
-  users: [
-    {
-      id: 1,
-      username: 'admin',
-      password: bcrypt.hashSync('admin123', 10),
-      fullname: 'Quản trị viên Phòng Văn hóa Xã hội Xã Phong Mỹ',
-      email: 'admin@xaphongmy.gov.vn',
-      role: 'admin',
-      created_at: '2026-07-01 08:00:00'
-    }
-  ],
-  categories: sampleCategories,
-  posts: samplePosts,
-  tenders: sampleTenders,
-  services: sampleServices,
-  contacts: sampleContacts,
+  posts: [],
+  tenders: [],
+  services: [],
+  contacts: [],
   settings: {
     site_title: 'CỔNG THÔNG TIN ĐIỆN TỬ PHÒNG VĂN HOÁ XÃ HỘI XÃ PHONG MỸ',
     sub_title: 'ỦY BAN NHÂN DÂN XÃ PHONG MỸ - BỘ PHẬN MỘT CỬA & PHÒNG VĂN HOÁ XÃ HỘI',
@@ -263,6 +251,9 @@ function initLocal() {
 initLocal();
 
 module.exports = {
+  init: async () => {
+    await syncWithSupabase();
+  },
   supabase: supabase,
   getData: () => dbData,
 

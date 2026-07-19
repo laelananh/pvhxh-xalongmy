@@ -202,9 +202,9 @@ let dbData = {
   settings: {
     site_title: 'CỔNG THÔNG TIN ĐIỆN TỬ PHÒNG VĂN HOÁ XÃ HỘI XÃ PHONG MỸ',
     sub_title: 'ỦY BAN NHÂN DÂN XÃ PHONG MỸ - BỘ PHẬN MỘT CỬA & PHÒNG VĂN HOÁ XÃ HỘI',
-    address: 'Trụ sở UBND Xã Phong Mỹ, Ấp Mỹ Phú, Xã Phong Mỹ, Huyện Cái Bè, Tỉnh Tiền Giang',
+    address: 'Trụ sở UBND Xã Phong Mỹ, Ấp 4, Xã Phong Mỹ, Tỉnh Đồng Tháp',
     phone: '0273 3855 123 - Hotline: 0918 456 789',
-    email: 'phongvanhoaxahoi@xaphongmy.tiengiang.gov.vn',
+    email: 'phongvanhoaxahoi@phongmy.dongthap.gov.vn',
     working_hours: 'Thứ 2 - Thứ 6: Sáng 07h30 - 11h30 | Chiều 13h30 - 17h00',
     banner_announcement: 'Chào mừng Quý công dân đến với Cổng Dịch vụ công & Thông tin Phòng Văn hóa Xã hội Xã Phong Mỹ.'
   }
